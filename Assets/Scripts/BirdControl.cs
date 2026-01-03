@@ -38,9 +38,9 @@ public class BirdController : MonoBehaviour
         if (_isAlive)
         {
             // Set kecepatan vertikal saat ini menjadi nol dulu agar flap konsisten
-            _rb2d.velocity = Vector2.zero;
+            _rb2d.linearVelocity = Vector2.zero;
             // Berikan kecepatan instan ke atas sebesar _flapForce
-            _rb2d.velocity = Vector2.up * _flapForce;
+            _rb2d.linearVelocity = Vector2.up * _flapForce;
         }
     }
 
